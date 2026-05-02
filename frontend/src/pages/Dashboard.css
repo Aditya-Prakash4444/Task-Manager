@@ -1,0 +1,159 @@
+.dashboard-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-title {
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.dashboard-loading {
+  padding: 2rem;
+  text-align: center;
+}
+
+.status-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.status-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.status-card.total {
+  border-top: 4px solid #3498db;
+}
+
+.status-card.in-progress {
+  border-top: 4px solid #f1c40f;
+}
+
+.status-card.overdue {
+  border-top: 4px solid #e74c3c;
+}
+
+.status-card.completed {
+  border-top: 4px solid #2ecc71;
+}
+
+.status-card h3 {
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.status-card p {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.status-card.total p {
+  color: #2c3e50;
+}
+
+.status-card.in-progress p {
+  color: #f39c12;
+}
+
+.status-card.overdue p {
+  color: #c0392b;
+}
+
+.status-card.completed p {
+  color: #27ae60;
+}
+
+.tasks-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tasks-section h2 {
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.tasks-section p {
+  color: #7f8c8d;
+}
+
+.tasks-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.tasks-table thead {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.tasks-table th {
+  padding: 1rem;
+  color: #495057;
+}
+
+.tasks-table tbody tr {
+  border-bottom: 1px solid #eee;
+}
+
+.tasks-table td {
+  padding: 1rem;
+}
+
+.task-name {
+  font-weight: 500;
+}
+
+.task-project-link {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.task-project-link:hover {
+  text-decoration: underline;
+}
+
+.task-due-date {
+  color: #666;
+}
+
+.task-due-date.overdue {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.task-status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.task-status-badge.completed {
+  background-color: #d4efdf;
+  color: #1e8449;
+}
+
+.task-status-badge.in-progress {
+  background-color: #fcf3cf;
+  color: #b7950b;
+}
+
+.task-status-badge.pending {
+  background-color: #f2f4f4;
+  color: #5d6d7e;
+}
