@@ -12,7 +12,7 @@ const taskRoutes = require('./routes/taskRoutes'); // (If you have this)
 dotenv.config();
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({origin: process.env.FRONTEND_URL || "http://localhost:5173"}));
 app.use('/api/auth', authRoutes);
 app.use('/api/projects', projectRoutes);
 app.use('/api/tasks', taskRoutes);
